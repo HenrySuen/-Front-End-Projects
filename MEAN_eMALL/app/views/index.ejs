@@ -30,7 +30,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <h1 class="navbar-brand"><a  href="/">Yummy</a></h1>
+                <h1 class="navbar-brand"><a  href="index.html">Yummy</a></h1>
             </div>
             <!--navbar-header-->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -43,12 +43,12 @@
                                 <div class="col-sm-3">
                                     <h4>Categories</h4>
                                     <ul class="multi-column-dropdown">
-                                        <li><a class="list" href="products.html">All pastries</a></li>
-                                        <li><a class="list" href="products.html">Snacks&Desserts</a></li>
-                                        <li><a class="list" href="products.html">Cake customization</a></li>
-                                        <li><a class="list" href="products.html">Afternoon tea</a></li>
-                                        <li><a class="list" href="products.html">Gift cake</a></li>
-                                        <li><a class="list" href="products.html">Raw materials</a></li>
+                                        <li><a class="list" href="/allMerchandise">All pastries</a></li>
+                                        <li><a class="list" href="#">Snacks&Desserts</a></li>
+                                        <li><a class="list" href="#">Cake customization</a></li>
+                                        <li><a class="list" href="#">Afternoon tea</a></li>
+                                        <li><a class="list" href="#">Gift cake</a></li>
+                                        <li><a class="list" href="#">Raw materials</a></li>
                                     </ul>
                                 </div>
                                 <div class="col-sm-3">
@@ -96,7 +96,8 @@
                                     <ul class="multi-column-dropdown">
                                         <li><a class="list" href="/createShop">Create a Shop</a></li>
                                         <li><a class="list" href="/shopList">Shop list</a></li>
-                                        <li><a class="list" href="products.html">All on sale</a></li>
+                                        <li><a class="list" href="/addMerchandise">Add a Merchandise</a></li>
+                                        <li><a class="list" href="/allMerchandise">All on sale</a></li>
                                     </ul>
                                 </div>
                                 <div class="col-sm-6">
@@ -224,11 +225,11 @@
             <div class="header-right login">
                 <a href="#"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></a>
                 <div id="loginBox">
-                    <form id="loginForm" action="/loginBuyer" method="post">
+                    <form id="loginForm">
                         <fieldset id="body">
                             <fieldset>
-                                <label for="username">Email Address</label>
-                                <input type="text" name="username" id="username">
+                                <label for="email">Email Address</label>
+                                <input type="text" name="email" id="email">
                             </fieldset>
                             <fieldset>
                                 <label for="password">Password</label>
@@ -237,8 +238,7 @@
                             <input type="submit" id="login" value="Sign in">
                             <label for="checkbox"><input type="checkbox" id="checkbox"> <i>Remember me</i></label>
                         </fieldset>
-
-                        <p>New User <a class="sign" href="/signUp">Sign Up</a> <span> <a class="sign" href="/resetPassword">Forgot Password</a></span></p>
+                        <p>New User ? <a class="sign" href="account.html">Sign Up</a> <span><a href="#">Forgot your password?</a></span></p>
                     </form>
                 </div>
             </div>

@@ -18,7 +18,7 @@ exports.doAdd = function (req, res) {
             var errInfo = "Error, please re-enter"
             res.render('/addMerchandise', errInfo);
         } else {
-            res.render('addSucceed');
+            res.redirect('/allMerchandise');
         }
     });
 }
@@ -26,8 +26,17 @@ exports.doAdd = function (req, res) {
 exports.all = function (req, res) {
     Merchandise.find(function (err, data) {
         res.render('allMerchandise', {
-            title: 'Express',
-            result: data
+            title: "data",
+            data: data
         });
-    })
-}
+    });
+};
+
+exports.shoppingNow = function(req, res) {
+    Merchandise.find(function (err, data) {
+        res.render('shoppingNow', {
+            title: "data",
+            data: data
+        });
+    });
+};
