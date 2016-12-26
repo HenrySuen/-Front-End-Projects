@@ -10,3 +10,7 @@ exports.signUp = function(req, res) {
         title: 'sighUp',
     });
 };
+
+exports.shoppingNow = function(req, res) {
+    res.render('shoppingNow');
+};

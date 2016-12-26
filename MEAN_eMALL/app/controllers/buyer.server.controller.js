@@ -48,15 +48,9 @@ exports.login = function (req, res, next) {
                 "username": req.body.username,
                 "password": req.body.password
             }
-        }, function(err,data){
-            if(data != null){
-                res.redirect('/qqq');
-            } else{
-                res.redirect('/ddd');
-            }
+        }, function (err, data) {
+        console.log(data);
     });
-
-
 }
 
 exports.model = function(req, res) {

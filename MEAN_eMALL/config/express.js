@@ -32,6 +32,8 @@ module.exports = function() {
 	require('../app/routes/todos.server.routes.js')(app);
     require('../app/routes/model.server.routes.js')(app);
     require('../app/routes/buyer.server.routes.js')(app);
+    require('../app/routes/shop.server.routes.js')(app);
+    require('../app/routes/merchandise.server.routes.js')(app);
 
 	app.use(express.static('./public'));
 

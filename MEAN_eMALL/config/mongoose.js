@@ -8,6 +8,8 @@ module.exports = function() {
 	require('../app/models/todo.server.model');
     require('../app/models/model.server.model');
     require('../app/models/buyer.server.model.js');
+    require('../app/models/shop.server.model.js');
+    require('../app/models/merchandise.server.model.js');
 
 
     return db;
