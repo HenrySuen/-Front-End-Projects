@@ -50,14 +50,14 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <h1 class="navbar-brand"><a  href="index.html">Yummy</a></h1>
+                <h1 class="navbar-brand"><a  href="/">Yummy</a></h1>
             </div>
             <!--navbar-header-->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                    <li><a href="/" class="active">Home</a></li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">As a Client<b class="caret"></b></a>
+                    <li><a href="/">Home</a></li>
+                    <li class="dropdown" >
+                        <a href="#"  class="active" class="dropdown-toggle" data-toggle="dropdown">As a Client<b class="caret"></b></a>
                         <ul class="dropdown-menu multi-column columns-4">
                             <div class="row">
                                 <div class="col-sm-3">
@@ -265,7 +265,7 @@
             <div class="header-right cart">
                 <a href="#"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span></a>
                 <div class="cart-box">
-                    <h4><a href="checkout.html">
+                    <h4><a href="/shoppingCart">
                             <span class="simpleCart_total"> $0.00 </span> (<span id="simpleCart_quantity" class="simpleCart_quantity"> 0 </span>)
                         </a></h4>
                     <p><a href="javascript:;" class="simpleCart_empty">Empty cart</a></p>
@@ -290,7 +290,7 @@
 
 
                 <div class="product-grid">
-                    <a href="single.html">
+                    <a href="/detailMerchandise?_id=<%= data[i]._id%>">
                         <div class="more-product"><span> </span></div>
                         <div class="product-img b-link-stripe b-animate-go  thickbox">
                             <img src="template/images/<%= data[i].img%>" class="img-responsive" alt="">

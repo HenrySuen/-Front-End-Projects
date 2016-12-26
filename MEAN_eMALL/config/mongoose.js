@@ -11,6 +11,5 @@ module.exports = function() {
     require('../app/models/shop.server.model.js');
     require('../app/models/merchandise.server.model.js');
 
-
     return db;
 };

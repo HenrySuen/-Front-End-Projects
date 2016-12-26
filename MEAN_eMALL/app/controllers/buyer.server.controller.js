@@ -42,14 +42,16 @@ exports.signUp = function (req, res, next) {
 
 exports.login = function (req, res, next) {
     console.log(req.body.username + req.body.password)
-    db.find({
-            "table": "Buyer",
-            "where": {
-                "username": req.body.username,
-                "password": req.body.password
-            }
-        }, function (err, data) {
-        console.log(data);
+    Buyer.findOne({
+        username:req.query.username,
+        password:req.query.password,
+    }, function (err, data) {
+        if(err){
+            res.render('index', {
+                error: "error , re-login!"
+            })
+        }
+        res.render('index', data);
     });
 }
 

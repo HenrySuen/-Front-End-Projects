@@ -16,5 +16,5 @@ module.exports = function(app) {
 
     app.get('/shoppingNow', merchandiseController.shoppingNow);
 
-
+    app.get('/detailMerchandise', merchandiseController.detail);
 }

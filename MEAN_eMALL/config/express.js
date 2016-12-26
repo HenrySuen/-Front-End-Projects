@@ -34,6 +34,7 @@ module.exports = function() {
     require('../app/routes/buyer.server.routes.js')(app);
     require('../app/routes/shop.server.routes.js')(app);
     require('../app/routes/merchandise.server.routes.js')(app);
+    require('../app/routes/shoppingCart.server.route.js')(app);
 
 	app.use(express.static('./public'));
 

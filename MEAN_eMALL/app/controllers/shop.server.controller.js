@@ -18,7 +18,7 @@ exports.doCreate = function (req, res) {
             var errInfo = "Error, please re-enter"
             res.render('/createShop', errInfo);
         } else {
-            res.render('createShopSucceed');
+            res.redirect('/allMerchandise');
         }
     });
 };

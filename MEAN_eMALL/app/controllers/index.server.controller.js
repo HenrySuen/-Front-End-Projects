@@ -8,7 +8,6 @@ exports.render = function(req, res) {
 exports.signUp = function(req, res) {
     res.render('signUp', {
         title: 'sighUp',
-        data: data
     });
 };
 
